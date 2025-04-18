@@ -1,0 +1,15 @@
+spring:
+  config:
+    import:
+      onboarding/onboarding-steps.yml
+
+telegram:
+  bot:
+    username: ${TG_BOT_NAME}
+    token: ${TG_BOT_TOKEN}
+    uri: ${TG_BOT_URI}
+
+server:
+  port: ${ONBOARDING_BOT_PORT:8081}
+  ssl:
+    enabled: false
